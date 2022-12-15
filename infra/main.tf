@@ -24,11 +24,6 @@ provider "azurerm" {
 }
 
 module "dockervm" {
-  source    = "./modules/dockervm"
+  source    = "./modules/sonar-nexus-jenkins"
   
 }
-
-#module "mysql" {
-#  source    = "./modules/mysql"
-  
-#}
