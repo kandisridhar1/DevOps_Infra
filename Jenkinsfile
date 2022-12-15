@@ -29,6 +29,11 @@ pipeline {
                TerraformDestroy()               
            }
            }
+      stage('FetchPublicIp') {
+       steps {
+        FetchPublicIPInfra()
+      }
+    }
       stage('Run Containers') {   
            steps{
         
